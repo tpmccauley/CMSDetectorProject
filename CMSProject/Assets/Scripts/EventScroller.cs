@@ -41,7 +41,24 @@ public class EventScroller : MonoBehaviour {
 			//.Cast<GameObject>()
 			//.ToArray();
 
-		//jsons = Resources.LoadAll ("JSON");
+		jsons = Resources.LoadAll ("json");
+		num_events = jsons.Length;
+
+		Debug.Log (jsons);
+		Debug.Log ("There are " + num_events + " json events");
+
+		foreach (Object obj in jsons) {
+
+			Debug.Log (obj.name);
+			CMSEvent cmsevt = new CMSEvent (obj.ToString ());
+
+			Debug.Log ("There are " + cmsevt.caloHits.Count + " types of caloHits");
+			Debug.Log ("There are " + cmsevt.muons.Count + " muons");
+			Debug.Log ("There are " + cmsevt.electrons.Count + " electrons");
+			Debug.Log ("There are " + cmsevt.tracks.Count + " tracks");
+
+		}
+
 
 		//Gets the events and the related data from the xml files
 		event_folders = Resources.LoadAll ("xml");
