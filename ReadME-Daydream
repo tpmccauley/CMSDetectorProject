@@ -1,0 +1,15 @@
+Build notes for Google Daydream
+thomas.mccauley@cern.ch
+
+* Use Unity 5.6 beta
+
+* Needs Android SDK and Google VR SDK
+
+* Built for Android 7.1
+
+* Need to update SteamVR plugin
+
+* Need to connect test phone with USB and need to turn USB debugging on
+
+* Need to download Android SK command line tools and replace /tools in SDK from above with /tools
+from command line tools (android command is deprecated in SDK and build error results otherwise)
