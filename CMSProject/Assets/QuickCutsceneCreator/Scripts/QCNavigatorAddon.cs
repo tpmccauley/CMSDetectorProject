@@ -19,7 +19,7 @@ namespace QuickCutscene.Utils {
 		public NavAgentActions[] navActions;
 		
 		//The NavMeshAgent components of each object
-		public NavMeshAgent[] navAgents;
+		public UnityEngine.AI.NavMeshAgent[] navAgents;
 		
 		//Used for dropdown selction
 		public bool[] showEvent;
@@ -44,7 +44,7 @@ namespace QuickCutscene.Utils {
 
 		//Quick references
 		private NavAgentActions currentNavAction;
-		private NavMeshAgent currentNavAgent;
+		private UnityEngine.AI.NavMeshAgent currentNavAgent;
 		private float currentDelayTime;
 		private Vector3 currentNavDest;
 		private float currentNavSpeed;

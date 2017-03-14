@@ -150,7 +150,7 @@ public class QCNavigatorAddonEditor : Editor {
 						q.navDestinations[i] = (Transform)EditorGUILayout.ObjectField(" Target position", q.navDestinations[i], typeof(Transform), true) as Transform;
 					} 
 					
-					q.navAgents[i] = (NavMeshAgent)EditorGUILayout.ObjectField(" NavMesh Agent", q.navAgents[i], typeof(NavMeshAgent), true) as NavMeshAgent;
+					q.navAgents[i] = (UnityEngine.AI.NavMeshAgent)EditorGUILayout.ObjectField(" NavMesh Agent", q.navAgents[i], typeof(UnityEngine.AI.NavMeshAgent), true) as UnityEngine.AI.NavMeshAgent;
 					q.actionStartDelay[i] = EditorGUILayout.FloatField(" Delay (sec) ", q.actionStartDelay[i]);
 					q.navAgentSpeed[i] = EditorGUILayout.FloatField(" Nav agent speed ", q.navAgentSpeed[i]);
 				}		
