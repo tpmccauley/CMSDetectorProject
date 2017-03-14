@@ -13,3 +13,11 @@ thomas.mccauley@cern.ch
 
 * Need to download Android SK command line tools and replace /tools in SDK from above with /tools
 from command line tools (android command is deprecated in SDK and build error results otherwise)
+
+Some links:
+
+* https://unity3d.com/partners/google/daydream
+
+* https://developer.android.com/studio/index.html
+
+* https://docs.google.com/document/d/1T1jYE4yOVtH3D_w0FH--jCx9q5m0H4LrZmKpbCi8Joo/edit#
